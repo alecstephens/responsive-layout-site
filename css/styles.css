@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+nav,
+header,
+main,
+h1 {
+    display: flex;
+}
+
+/* Header and Main Navigation */
+h1 {
+    justify-content: center;
+}
+
+nav { 
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Styles for the main content of the page */
+main {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
