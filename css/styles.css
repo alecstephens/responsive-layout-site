@@ -5,27 +5,67 @@
 nav,
 header,
 main,
-h1 {
+h1,
+ul {
     display: flex;
+}
+
+/* General Styles */
+
+body {
+    font-family: 'Georama', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 90%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 /* Header and Main Navigation */
 h1 {
     justify-content: center;
+    margin-bottom: auto;
 }
 
-nav { 
-    justify-content: center;
+nav {
     flex-direction: column;
 }
 
 ul {
     list-style-type: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    border: 1px solid white;
+    margin: 2px 15px;
+    background-color: white;
+    padding: 10px;
+
 }
 
 header {
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.profile-image {
+    width: 65%;
+    padding-top: 25px;
+}
+
+nav, header {
+    background-color: whitesmoke;
 }
 
 /* Styles for the main content of the page */
@@ -35,6 +75,3 @@ main {
     text-align: center;
 }
 
-img {
-    width: 100%;
-}
