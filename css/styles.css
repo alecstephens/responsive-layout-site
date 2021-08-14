@@ -6,7 +6,9 @@ nav,
 header,
 main,
 h1,
-ul {
+ul,
+footer,
+aside {
     display: flex;
 }
 
@@ -74,4 +76,23 @@ main {
     flex-direction: column;
     text-align: center;
 }
+
+/* Styles for the footer section */
+
+footer {
+    background-color: whitesmoke;
+}
+
+.contact {
+    text-align: center;
+    padding: 0 10px;
+}
+
+aside {
+    background-color: whitesmoke;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+
 
