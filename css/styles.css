@@ -94,5 +94,57 @@ aside {
     padding: 0 10px;
 }
 
+/* Media Queries */
+@media (min-width: 768px) {
+    h1 {
+        justify-content: center;
+        margin-bottom: auto;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        list-style-type: none;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        padding: 5px 0;
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .profile-image {
+        margin-left: 30px;
+        width: 40%;
+        padding-bottom: 40px;
+    }
+
+    .bio {
+        flex: 1;
+        text-align: left;
+        margin-left: 30px;
+        padding-top: 5px;
+    }
+
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+   
+}
+
 
 
