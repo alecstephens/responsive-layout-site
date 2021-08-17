@@ -4,11 +4,10 @@
 
 nav,
 header,
-main,
+.projects,
 h1,
 ul,
-footer,
-aside {
+.name {
     display: flex;
 }
 
@@ -26,6 +25,7 @@ img {
 
 a {
     color: black;
+    background-color: whitesmoke;
     text-decoration: none;
 }
 
@@ -71,31 +71,41 @@ nav, header {
 }
 
 /* Styles for the main content of the page */
-main {
+.projects section{
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
 
+.contact {
+    padding: 60px 0;
+    border-bottom:2px solid black;
+    background-color: whitesmoke;
+    width: calc(100% - 20px);
+    margin: auto;
+}
+
+.contact li {
+    background-color: whitesmoke;
+    border: none;
+}
+
 /* Styles for the footer section */
 
-footer {
-    background-color: whitesmoke;
-}
-
-.contact {
-    text-align: center;
-    padding: 0 10px;
-}
-
-aside {
-    background-color: whitesmoke;
+footer ul {
+    font-weight: 700;
+    display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 10px;
+}
+
+.med-nav {
+    display: none;
 }
 
 /* Media Queries */
 @media (min-width: 768px) {
+    /* Styles for header and nav */
     h1 {
         justify-content: center;
         margin-bottom: auto;
@@ -135,16 +145,33 @@ aside {
         padding-top: 5px;
     }
 
-    #portfolio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+    /* styles for main section */
+    .projects{
+        flex-wrap: wrap;
     }
 
-    
-   
+    .project {
+        flex: 1 50%;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    /* styles for footer section */
+
+    .small-nav {
+        display: none;
+    }
+
+    .med-nav {
+        display: inline-block;
+        padding: 0 0 0 10px;
+    }
+
+    .student-name {
+        margin-left: 0;
+        margin-right: auto;
+    }
 }
-
-
-
