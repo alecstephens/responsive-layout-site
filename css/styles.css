@@ -25,8 +25,13 @@ img {
 
 a {
     color: black;
-    background-color: whitesmoke;
     text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    font-size: 1.1rem;
+    background:#fff;
 }
 
 /* Header and Main Navigation */
@@ -71,10 +76,36 @@ nav, header {
 }
 
 /* Styles for the main content of the page */
-.projects section{
+h2 {
+    text-align: center;
+}
+
+.projects{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+main p {
+    width: 100%;
+    padding: 0 15px 5px;
+}
+
+.skills {
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.skills ul{
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills li {
+    background-color: whitesmoke;
+    border: none;
 }
 
 .contact {
@@ -95,8 +126,13 @@ nav, header {
 footer ul {
     font-weight: 700;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+}
+
+footer a {
+    background-color: white;
 }
 
 .med-nav {
@@ -104,7 +140,7 @@ footer ul {
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     /* Styles for header and nav */
     h1 {
         justify-content: center;
@@ -148,6 +184,9 @@ footer ul {
     /* styles for main section */
     .projects{
         flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
     }
 
     .project {
@@ -159,6 +198,23 @@ footer ul {
         text-align: center;
     }
 
+    .skills {
+        text-align: center;
+        background-color: whitesmoke;
+        margin: 10px;
+        padding-top: 10px;
+    }
+
+    .skills ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills li {
+        background-color: whitesmoke;
+        border: none;
+    }
+
     /* styles for footer section */
 
     .small-nav {
@@ -167,11 +223,103 @@ footer ul {
 
     .med-nav {
         display: inline-block;
-        padding: 0 0 0 10px;
+        padding: 10px 0 0 10px;
     }
 
     .student-name {
         margin-left: 0;
         margin-right: auto;
     }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Styles for header and nav */   
+
+    nav {
+        flex-direction: row;
+        padding-left: 40px;
+    }
+
+    ul {
+        list-style-type: none;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    header {
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .profile-image {
+        margin-left: 30px;
+        width: 40%;
+        padding-bottom: 40px;
+    }
+
+    .bio {
+        flex: 1;
+        text-align: left;
+        margin-left: 30px;
+        padding-top: 5px;
+    }
+
+    /* styles for main section */
+
+    h2 {
+        text-align: center;
+    }
+
+    .projects{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    .project {
+        flex: 1 33%;
+        text-align: center;
+    }
+
+    .skills {
+        text-align: center;
+        background-color: whitesmoke;
+        margin: 10px;
+        padding-top: 10px;
+    }
+
+    .skills ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills li {
+        background-color: whitesmoke;
+        border: none;
+    }
+
+
+    /* styles for footer section */
+    .contact {
+        padding: 60px 0;
+        border-bottom:2px solid black;
+        background-color: whitesmoke;
+        text-align: center;
+        width: calc(100% - 20px);
+        margin: auto;
+    }
+    
+    .contact li {
+        background-color: whitesmoke;
+        border: none;
+    }
+
 }
