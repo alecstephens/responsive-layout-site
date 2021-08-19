@@ -226,7 +226,7 @@ footer a {
         padding: 10px 0 0 10px;
     }
 
-    .student-name {
+    footer .student-name {
         margin-left: 0;
         margin-right: auto;
     }
@@ -234,8 +234,8 @@ footer a {
 
 @media screen and (min-width: 1024px) {
     /* Styles for header and nav */   
-
     nav {
+        justify-content: left;
         flex-direction: row;
         padding-left: 40px;
     }
@@ -245,6 +245,7 @@ footer a {
         flex-direction: row;
         text-align: center;
         justify-content: center;
+        margin-left: 160%;
     }
 
 
